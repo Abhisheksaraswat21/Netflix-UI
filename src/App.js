@@ -22,11 +22,7 @@ function App() {
 const dispatch = useDispatch();
 
   useEffect(()=> {
-    //it is a  listener to change in state of authentication
-    //basically jab user refersh krega tb ye logout ni krega usko...
-    //it will store user in local memory 
-    //this takes up a memory ...if component is unmount we dont want to duplicate
-    //a listener...we detach old and attach a new one
+  
   const unsubscribe =   auth.onAuthStateChanged(userAuth => {
       if(userAuth)
       {
@@ -34,10 +30,7 @@ const dispatch = useDispatch();
         console.log(userAuth);
 
         dispatch(login({
-          //this is all payload we want ti set user to payload
-          //we are passing these things as payload
-          //ab userauth me bhaut kuch hai pr hume bs uid aur email pass krna hai to
-          //wo keys bnaake paas krdi humne
+         
 
           uid: userAuth.uid,
           email: userAuth.email,
@@ -48,8 +41,7 @@ const dispatch = useDispatch();
       else
       {
         //logged out
-        //logout is resetting user back to null
-        //we defined logout in userSlice
+       
         dispatch(logout());
       }
 
