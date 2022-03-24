@@ -7,9 +7,7 @@ function Nav() {
 
   const [show, handleShow] = useState(false);
 
-//use history stores the hsitory of the pages on where we were
-//ab jese back aur foreward button ko pta hai which site was opened last 
-// so history.push pushes the pageon it so that it can be navigated through the buttons 
+
 const history = useHistory();
 
 
@@ -24,15 +22,12 @@ const history = useHistory();
   }
 
   useEffect(()=> {
-    //when we will scroll it will listen to thw transition navbar
   window.addEventListener("scroll", transitionNavBar);
 
-  //this is generally the clean up function. it just removes the listener
   return ()=>  window.removeEventListener("scroll", transitionNavBar)
   },[])
   return (
 
-    //it means only add nav black class when show is true
     <div className={`nav ${show && "nav__black"}`}>
         
       <div className="nav_content">
