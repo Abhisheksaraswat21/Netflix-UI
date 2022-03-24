@@ -1,7 +1,7 @@
 .banner {
     height: 448px;
     position: relative;
-    /* contain means if we have an image and we increase the brower width so it keeps maintaining aspect ratio */
+    
     object-fit: contain;
     /* width: 100%; */
     color: white;
