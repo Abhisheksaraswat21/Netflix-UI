@@ -12,8 +12,7 @@ function Row({ title, fetchUrl, isLargeRow = false }) {
 
   const [movies, setMovies] = useState([]);
 
-  //https://image.tmdb.org/t/p/original/  this is generally a way of accessing the data from tmdb anf backdrop_path
-  //we get fromt the movie console.log
+  
 
   console.log("thhis is inside " + fetchUrl);
 
@@ -47,8 +46,7 @@ function Row({ title, fetchUrl, isLargeRow = false }) {
       <div className="row__posters">
         {movies.map(
           (movie) =>
-          // (  (isLargeRow && movie.poster_path) ||
-          //   (!isLargeRow && movie.backdrop_path ))&& (
+       
               <img
                 className={`row__poster ${isLargeRow && "row__posterLarge"}`}
                 key={movie.id}
