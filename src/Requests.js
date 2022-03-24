@@ -3,8 +3,7 @@
     const API_KEY = "44a135a4d6b0eddfde8eaa9ce0fe2d3c";
 
     const requests = {
-//this is concatinating api key in the requests
-//and in axios we have a base url also so it every link is adding in that 
+
  fetchTrending: `/trending/all/week?api_key=${API_KEY}&language=en-US`,
  fetchNetflixOriginals: `/discover/tv?api_key=${API_KEY}&with_networks=213`,
  fetchTopRated: `/movie/top_rated?api_key=${API_KEY}&language=en-US`,
