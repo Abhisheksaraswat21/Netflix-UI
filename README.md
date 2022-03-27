@@ -1,3 +1,16 @@
+
+
+There are a few issues -
+1. At times the netflix icon doesn't come up (especially if you are checking it in safari). Refreshing it or checking it in Chome might clear the issue.
+2. After clicking the website, clicking the 'Get Started' button, after that, enter the user credentials and click 'Sign Up Now' text. This will create your account will take you to the homepage.
+
+
+THANK YOU!!
+
+Test this website here --
+https://netflix-ui-seven.vercel.app/
+
+
 This is how it looks like
 
 
@@ -8,6 +21,7 @@ This is how it looks like
 <img src="img3.png" height="600"></img>
 
 <img src="img4.png" height="600"></img>
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
